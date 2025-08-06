@@ -1,0 +1,29 @@
+.font-space-grotesk {
+  font-family: 'Arial', sans-serif;
+}
+
+.profile-image {
+  background-image: url('../images/Profile2Formal_1x1.png');
+}
+
+.coplan-background {
+  background-image: url('../images/COPLAN_bg.png');
+}
+
+.clinic-background {
+  background-image: url('../images/Clinic_Background_bg.png');
+}
+
+.library-background {
+  background-image: url('../images/Library_bg.png');
+}
+.drugstore-background {
+  background-image: url('../images/Drugstore_bg.png');
+}
+
+.guidance-background {
+  background-image: url('../images/Guidance_bg.png');
+}
+.transaction-background {
+  background-image: url('../images/Transaction_bg.png');
+}

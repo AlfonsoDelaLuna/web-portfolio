@@ -1,0 +1,231 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&family=Space+Grotesk%3Awght%40400%3B500%3B700" />
+    <title>DelaLunaPortfolio</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link rel="stylesheet" href="src/App.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body class="bg-[#050A30]">
+  <!-- Main Wrapper -->
+  <div class="relative flex size-full min-h-screen flex-col group/design-root font-space-grotesk">
+    <div class="layout-container flex h-full grow flex-col">
+      <!-- Header -->
+      <header class="sticky top-0 z-10 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#1e293b] px-10 py-3 bg-[#050A30]/80 backdrop-blur-sm">
+        <div class="flex flex-1 justify-center gap-8">
+          <div class="flex items-center gap-9">
+            <a class="text-[#FFA500] text-sm font-medium leading-normal hover:text-white transition-colors" href="#about">About</a>
+            <a class="text-[#FFA500] text-sm font-medium leading-normal hover:text-white transition-colors" href="#projects">Projects</a>
+            <a class="text-[#FFA500] text-sm font-medium leading-normal hover:text-white transition-colors" href="#experience">Experience</a>
+            <a class="text-[#FFA500] text-sm font-medium leading-normal hover:text-white transition-colors" href="#education">Education</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content Area -->
+      <main class="flex justify-center px-4 sm:px-10 md:px-20 py-16">
+        <div class="flex w-full max-w-[1152px] flex-col gap-16">
+
+          <!-- 1. INFORMATION & SKILLS SECTION -->
+          <section id="about" class="flex flex-col items-center text-center">
+            <!-- Profile Info -->
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+              <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-40 h-40 flex-shrink-0 profile-image"></div>
+              <div class="flex flex-col items-center md:items-start justify-center text-center md:text-left">
+                <p class="text-[#FFA500] text-3xl font-bold leading-tight tracking-[-0.015em]">Alfonso Martin I. Dela Luna</p>
+                <p class="text-[#a9a9d8] text-lg font-normal leading-normal">Web/Software Developer</p>
+                <p class="text-[#a9a9d8] text-base font-normal leading-normal">Bagong Pag-asa Quezon City, Philippines</p>
+                <div class="flex items-center gap-3 pt-3">
+                  <a href="https://github.com/AlfonsoDelaLuna" class="hover:opacity-80 transition-opacity"><img src="images/Github.png" alt="GitHub" width="36px" height="36px"></a>  
+                  <a href="https://www.linkedin.com/notifications/?filter=all" class="hover:opacity-80 transition-opacity"><img src="images/LinkedIn.png" alt="LinkedIn" width="30px" height="30px"></a>
+                  <a href="https://jobseeker.kalibrr.com/candidate/profile" class="hover:opacity-80 transition-opacity"><img src="images/Kalibrr.png" alt="Kalibrr" width="24px" height="24px"></a>
+                  <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage" class="hover:opacity-80 transition-opacity"><img src="images/Indeed.png" alt="Indeed" width="34px" height="34px"></a>
+                </div>
+                <div class="pt-4">
+                  <a href="../Dela_Luna,_Alfonso_Martin_I.pdf" download="DelaLuna_Resume.pdf" class="inline-block bg-[#FFA500] text-white font-bold py-2 px-4 rounded-md hover:bg-orange-600 transition-colors">Download Resume</a>
+                </div>
+              </div>
+            </div>
+            <!-- Skills -->
+            <div class="w-full pt-16">
+              <h2 class="text-2xl font-bold text-[#FFA500]">Skills</h2>
+              <div class="flex flex-wrap justify-center gap-x-6 gap-y-4 pt-6">
+                <div class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110">
+                  <img src="images/HTML.png" alt="HTML5" class="w-12 h-12 rounded-lg" />
+                  <p class="text-[#a9a9d8] text-sm">HTML5</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110">
+                  <img src="images/CSS.png" alt="CSS3" class="w-12 h-12 rounded-lg" />
+                  <p class="text-[#a9a9d8] text-sm">CSS3</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110">
+                  <img src="images/JS.png" alt="JavaScript" class="w-12 h-12 rounded-lg" />
+                  <p class="text-[#a9a9d8] text-sm">JavaScript</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110">
+                  <img src="images/PHP.png" alt="PHP" class="w-16 h-12 rounded-lg" />
+                  <p class="text-[#a9a9d8] text-sm">PHP</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110">
+                  <img src="images/MySQL.png" alt="MySQL" class="w-12 h-12 rounded-lg" />
+                  <p class="text-[#a9a9d8] text-sm">MySQL</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110">
+                  <img src="images/Java.png" alt="Java" class="w-12 h-12 rounded-lg" />
+                  <p class="text-[#a9a9d8] text-sm">Java</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110">
+                  <img src="images/Python.png" alt="Python" class="w-12 h-12 rounded-lg" />
+                  <p class="text-[#a9a9d8] text-sm">Python</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 2. PROJECTS SECTION  -->
+          <section id="projects">
+            <h2 class="text-2xl font-bold text-center text-[#FFA500]">Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-8">
+              <!-- STIER COPLAN - Event Reservation System -->
+              <div class="flex flex-col gap-3 rounded-lg bg-[#0c123a] p-4">
+                <a href="#"><div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md coplan-background"></div></a>
+                <div>
+                  <p class="text-[#FFA500] text-lg font-medium">STIER COPLAN - Event Reservation System</p>
+                  <div class="flex flex-wrap gap-2 pt-3">
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">HTML</span>
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">CSS</span>
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">JavaScript</span>
+                    <span class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full">Java</span>
+                    <span class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full">Firebase</span>
+                    <span class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full">Android</span>
+                  </div>
+                  <ul class="text-[#a9a9d8] text-sm font-normal pt-1">
+                    <li>Created a reservation system in Java and Firebase to handle student event bookings.</li>
+                    <li>Prevented 30+ double bookings during actual campus reservations.</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Clinic Management System -->
+              <div class="flex flex-col gap-3 rounded-lg bg-[#0c123a] p-4">
+                <a href="https://github.com/AlfonsoDelaLuna/Clinic_Management_System"><div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md clinic-background"></div></a>
+                <div>
+                  <p class="text-[#FFA500] text-lg font-medium">Clinic Management System</p>
+                  <div class="flex flex-wrap gap-2 pt-3">
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">HTML</span>
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">CSS</span>
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">JavaScript</span>
+                    <span class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full">PHP</span>
+                    <span class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full">MySQL</span>
+                  </div>
+                  <p class="text-[#a9a9d8] text-sm font-normal pt-1">A Replaced paper records for 200+ students with a PHP/MySQL system, cutting search time from minutes to seconds.</p>
+                </div>
+              </div>
+              <!-- Library Management System -->
+              <div class="flex flex-col gap-3 rounded-lg bg-[#0c123a] p-4">
+                <a href="https://github.com/AlfonsoDelaLuna/Library_Management_System"><div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md library-background"></div></a>
+                <div>
+                  <p class="text-[#FFA500] text-lg font-medium">Library Management System</p>
+                  <div class="flex flex-wrap gap-2 pt-3">
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">HTML</span>
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">CSS</span>
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">JavaScript</span>
+                    <span class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full">PHP</span>
+                    <span class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full">MySQL</span>
+                  </div>
+                  <p class="text-[#a9a9d8] text-sm font-normal pt-1">A web application that tracks student library attendance.</p>
+                </div>
+              </div>
+              <!-- Guidance Management System -->
+              <div class="flex flex-col gap-3 rounded-lg bg-[#0c123a] p-4">
+                <a href="https://github.com/AlfonsoDelaLuna/Guidance_System"><div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md guidance-background"></div></a>
+                <div>
+                  <p class="text-[#FFA500] text-lg font-medium">Guidance Management System</p>
+                  <div class="flex flex-wrap gap-2 pt-3">
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">HTML</span>
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">CSS</span>
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">JavaScript</span>
+                    <span class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full">PHP</span>
+                    <span class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full">MySQL</span>
+                  </div>
+                  <p class="text-[#a9a9d8] text-sm font-normal pt-1">A web application for managing student records, and appointments.</p>
+                </div>
+              </div>
+              <!-- Drugstore Management System -->
+              <div class="flex flex-col gap-3 rounded-lg bg-[#0c123a] p-4">
+                <a href="https://github.com/AlfonsoDelaLuna/Drugstore_Inventory"><div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md drugstore-background"></div></a>
+                <div>
+                  <p class="text-[#FFA500] text-lg font-medium">Drugstore Management System</p>
+                  <div class="flex flex-wrap gap-2 pt-3">
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">HTML</span>
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">CSS</span>
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">JavaScript</span>
+                    <span class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full">PHP</span>
+                    <span class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full">MySQL</span>
+                  </div>
+                  <p class="text-[#a9a9d8] text-sm font-normal pt-1">Tracks 100+ medicine items with alerts for low stock and expiration, made for use by one storekeeper or clinic staff.</p>
+                </div>
+              </div>
+              <!-- Transaction Management System -->
+              <div class="flex flex-col gap-3 rounded-lg bg-[#0c123a] p-4">
+                <a href="https://github.com/AlfonsoDelaLuna/Transaction-System"><div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md transaction-background"></div></a>
+                <div>
+                  <p class="text-[#FFA500] text-lg font-medium">Transaction Management System</p>
+                  <div class="flex flex-wrap gap-2 pt-3">
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">HTML</span>
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">CSS</span>
+                    <span class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full">JavaScript</span>
+                    <span class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full">PHP</span>
+                    <span class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full">MySQL</span>
+                  </div>
+                  <p class="text-[#a9a9d8] text-sm font-normal pt-1 text-justify">
+                    Transaction System is a PHP-based web application for managing customer and administrator activities. It allows customers to place orders and administrators to oversee them through a dashboard. Data is stored in a MySQL database, set up using the provided file.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 3. EXPERIENCE SECTION -->
+          <section id="experience">
+            <h2 class="text-2xl font-bold text-center text-[#FFA500]">Experience</h2>
+            <div class="flex flex-col gap-8 pt-8">
+              <!-- Experience Item 1 -->
+              <div class="flex flex-col sm:flex-row gap-6">
+                <img src="images/STI_Logo.png" alt="Company Logo" class="w-16 h-16 rounded-lg object-cover flex-shrink-0" />
+                <div class="flex flex-col">
+                  <p class="text-[#FFA500] font-bold text-lg">MIS/IT Department - Internship </p>
+                  <p class="text-[#a9a9d8] text-base">STI College Caloocan | February 2025 - April 2025</p>
+                  <ul class="list-disc list-inside text-[#a9a9d8] text-sm space-y-1 pt-2">
+                    <li>Built and deployed record systems for the clinic, library, and guidance office using PHP/MySQL, improving efficiency by 83% and cutting manual tracking errors.</li>
+                    <li>Ran a cybersecurity orientation for over 30 senior high school interns, helping them understand common digital threats and how to avoid them.</li>
+                    <li>Fixed network and hardware issues, resolving 73% of cases and reducing system downtime for students and staff.</li>
+                    <li>Worked with teams on full-stack projects and IT support, improving technical knowledge, communication, and ability to solve real-world problems.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 4. EDUCATION SECTION -->
+          <section id="education">
+            <h2 class="text-2xl font-bold text-center text-[#FFA500]">Education</h2>
+            <div class="flex flex-col gap-8 pt-8">
+              <!-- Education Item 1 -->
+              <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                <img src="images/STI_Logo.png" alt="School Logo" class="w-16 h-16 rounded-lg object-cover flex-shrink-0" />
+                <div class="flex flex-col">
+                  <p class="text-[#FFA500] font-bold text-lg">STI College Caloocan</p>
+                  <p class="text-[#a9a9d8] text-base">Bachelor of Science in Information Technology</p>
+                  <p class="text-[#a9a9d8] text-sm">2021 - 2025</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </main>
+    </div>
+  </div>
+</body> 
+</html>
