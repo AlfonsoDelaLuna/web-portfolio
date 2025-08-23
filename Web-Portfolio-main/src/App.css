@@ -1,0 +1,61 @@
+/* Font */
+.font-space-grotesk {
+  font-family: "Space Grotesk", "Noto Sans", Arial, sans-serif;
+}
+
+/* Design under Project Section  */
+.project-item {
+  transition: all 0.3s ease-in-out;
+}
+
+.project-item:hover {
+  background-color: #e0e0e025;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Images used in Project Section */
+.profile-image-primary {
+  background-image: url("../images/Profile2Formal_1x1.png");
+}
+
+.profile-image-secondary {
+  background-image: url("../images/STI_Logo.png");
+}
+
+.coplan-background {
+  background-image: url("../images/COPLAN_bg.png");
+}
+
+.clinic-background {
+  background-image: url("../images/Clinic_Background_bg.png");
+}
+
+.library-background {
+  background-image: url("../images/library_bg.png");
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.group:hover .loading-border {
+  opacity: 1;
+}
+
+.drugstore-background {
+  background-image: url("../images/Drugstore_bg.png");
+}
+
+.guidance-background {
+  background-image: url("../images/Guidance_bg.png");
+}
+.transaction-background {
+  background-image: url("../images/Transaction_bg.png");
+}

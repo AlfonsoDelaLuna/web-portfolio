@@ -1,0 +1,602 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&family=Space+Grotesk%3Awght%40400%3B500%3B700"
+    />
+    <title>DelaLunaPortfolio</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link rel="stylesheet" href="src/App.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body class="bg-[#050A30]">
+    <!-- Main Wrapper -->
+    <div
+      class="relative flex size-full min-h-screen flex-col group/design-root font-space-grotesk"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <!-- Main Content Area -->
+        <main class="flex justify-center px-4 sm:px-10 md:px-20 py-16">
+          <div class="flex w-full max-w-[1152px] flex-col gap-16">
+            <!-- 1. INFORMATION & SKILLS SECTION -->
+            <section
+              id="about"
+              class="min-h-[calc(100vh-8rem)] w-full flex flex-col items-center justify-center text-center"
+            >
+              <!-- Profile Info -->
+              <div
+                class="flex flex-col md:flex-row items-center gap-8 md:gap-12"
+              >
+                <div
+                  class="relative w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 flex-shrink-0 group"
+                >
+                  <div
+                    class="absolute inset-0 bg-center bg-no-repeat aspect-square bg-cover rounded-full w-full h-full profile-image-primary ring-4 ring-yellow-500 shadow-xl"
+                  ></div>
+                  <div
+                    class="absolute inset-0 bg-center bg-no-repeat aspect-square bg-cover rounded-full w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-00 profile-image-secondary ring-4 ring-yellow-500 shadow-xl"
+                  ></div>
+                </div>
+                <div
+                  class="flex flex-col items-center md:items-start justify-center text-center md:text-left"
+                >
+                  <h1
+                    class="text-[#FFA500] text-4xl sm:text-5xl md:text-6xl font-extrabold leading-[1.1] tracking-tight"
+                  >
+                    <span
+                      class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:h-3 sm:before:h-4 md:before:h-6 before:w-[110%] before:rounded-md before:-z-10"
+                    >
+                      Alfonso Martin I. Dela Luna
+                    </span>
+                  </h1>
+                  <p
+                    class="text-gray-400 text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug"
+                  >
+                    Web/Software Developer
+                  </p>
+                  <p
+                    class="text-gray-400 text-lg md:text-xl font-normal leading-snug"
+                  >
+                    Bagong Pag-asa Quezon City, Philippines
+                  </p>
+                  <div class="pt-4">
+                    <!-- Reference Layout -->
+                    <div
+                      class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2"
+                    >
+                      <a
+                        href="#projects"
+                        class="inline-flex h-12 px-6 items-center justify-center rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold shadow hover:opacity-60 transition"
+                      >
+                        View My Work <span class="ml-2">→</span>
+                      </a>
+                      <a
+                        href="public/Dela_Luna,_Alfonso_Martin_I.pdf"
+                        download="DelaLuna_Resume.pdf"
+                        class="inline-flex h-12 px-6 items-center justify-center rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold hover:opacity-60 transition"
+                      >
+                        Download CV
+                      </a>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-4 pt-8">
+                    <a
+                      href="https://github.com/AlfonsoDelaLuna"
+                      class="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition"
+                    >
+                      <img
+                        src="images/Github.png"
+                        alt="GitHub"
+                        class="h-6 w-6"
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/notifications/?filter=all"
+                      class="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition"
+                    >
+                      <img
+                        src="images/LinkedIn.png"
+                        alt="LinkedIn"
+                        class="h-6 w-6"
+                      />
+                    </a>
+                    <a
+                      href="https://jobseeker.kalibrr.com/candidate/profile"
+                      class="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition"
+                    >
+                      <img
+                        src="images/kalibrr.png"
+                        alt="Kalibrr"
+                        class="h-6 w-6"
+                      />
+                    </a>
+                    <a
+                      href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage"
+                      class="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition"
+                    >
+                      <img
+                        src="images/indeed.png"
+                        alt="Indeed"
+                        class="h-6 w-6"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Skills -->
+              <div class="w-full pt-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#FFA500]">
+                  Skills
+                </h2>
+                <div class="flex flex-wrap justify-center gap-x-8 gap-y-6 pt-8">
+                  <div
+                    class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 project-item"
+                  >
+                    <img
+                      src="images/HTML.png"
+                      alt="HTML5"
+                      class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
+                    />
+                    <p class="text-[#a9a9d8] text-base md:text-lg">HTML5</p>
+                  </div>
+                  <div
+                    class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 project-item"
+                  >
+                    <img
+                      src="images/CSS.png"
+                      alt="CSS3"
+                      class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
+                    />
+                    <p class="text-[#a9a9d8] text-base md:text-lg">CSS3</p>
+                  </div>
+                  <div
+                    class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 project-item"
+                  >
+                    <img
+                      src="images/JS.png"
+                      alt="JavaScript"
+                      class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
+                    />
+                    <p class="text-[#a9a9d8] text-base md:text-lg">
+                      JavaScript
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 project-item"
+                  >
+                    <img
+                      src="images/PHP.png"
+                      alt="PHP"
+                      class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
+                    />
+                    <p class="text-[#a9a9d8] text-base md:text-lg">PHP</p>
+                  </div>
+                  <div
+                    class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 project-item"
+                  >
+                    <img
+                      src="images/MYSQL.png"
+                      alt="MySQL"
+                      class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
+                    />
+                    <p class="text-[#a9a9d8] text-base md:text-lg">MySQL</p>
+                  </div>
+                  <div
+                    class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 project-item"
+                  >
+                    <img
+                      src="images/Java.png"
+                      alt="Java"
+                      class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
+                    />
+                    <p class="text-[#a9a9d8] text-base md:text-lg">Java</p>
+                  </div>
+                  <div
+                    class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 project-item"
+                  >
+                    <img
+                      src="images/Python.png"
+                      alt="Python"
+                      class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
+                    />
+                    <p class="text-[#a9a9d8] text-base md:text-lg">Python</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- 2. PROJECTS SECTION  -->
+            <section id="projects">
+              <h2 class="text-2xl font-bold text-center text-[#FFA500]">
+                Projects
+              </h2>
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-8"
+              >
+                <!-- STIER COPLAN - Event Reservation System -->
+                <div
+                  class="flex flex-col gap-3 rounded-lg bg-[#0c123a] p-4 project-item"
+                >
+                  <a href="#"
+                    ><div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md coplan-background"
+                    ></div
+                  ></a>
+                  <div>
+                    <p
+                      class="text-[#FFA500] text-lg font-medium"
+                      style="font-weight: bold"
+                    >
+                      STIER COPLAN
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-3">
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >HTML</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >CSS</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full"
+                        >Java</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full"
+                        >Firebase</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full"
+                        >Android</span
+                      >
+                    </div>
+                    <ul class="text-[#a9a9d8] text-sm font-normal pt-1">
+                      <li>
+                        Created a reservation system in Java and Firebase to
+                        handle student event bookings.
+                      </li>
+                      <li>
+                        Prevented 30+ double bookings during actual campus
+                        reservations.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Clinic Management System -->
+                <div
+                  class="flex flex-col gap-3 rounded-lg bg-[#0c123a] p-4 project-item"
+                >
+                  <a
+                    href="https://github.com/AlfonsoDelaLuna/Clinic_Management_System"
+                    ><div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md clinic-background"
+                    ></div
+                  ></a>
+                  <div>
+                    <p
+                      class="text-[#FFA500] text-lg font-medium"
+                      style="font-weight: bold"
+                    >
+                      Clinic Management System
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-3">
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >HTML</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >CSS</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full"
+                        >PHP</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full"
+                        >MySQL</span
+                      >
+                    </div>
+                    <p
+                      class="text-[#a9a9d8] text-sm font-normal pt-1 text-justify"
+                    >
+                      A web-based management system that simplifies the
+                      conversion of paper-based to digital health records. It
+                      assists nurses with documenting the patient's condition,
+                      prescribing medication, and storing information for later
+                      printing or downloading.
+                    </p>
+                  </div>
+                </div>
+                <!-- Library Management System -->
+                <div
+                  class="flex flex-col gap-3 rounded-lg bg-[#0c123a] p-4 project-item"
+                >
+                  <a
+                    href="https://github.com/AlfonsoDelaLuna/Library_Management_System"
+                    ><div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md library-background"
+                    ></div
+                  ></a>
+                  <div>
+                    <p
+                      class="text-[#FFA500] text-lg font-medium"
+                      style="font-weight: bold"
+                    >
+                      Library Management System
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-3">
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >HTML</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >CSS</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full"
+                        >PHP</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full"
+                        >MySQL</span
+                      >
+                    </div>
+                    <p
+                      class="text-[#a9a9d8] text-sm font-normal pt-1 text-justify"
+                    >
+                      A web-based management system that keeps track of students
+                      who access the library. It assists the librarian in
+                      keeping track of how frequently a student visits the
+                      library and storing their login sheet for authentication.
+                    </p>
+                  </div>
+                </div>
+                <!-- Guidance Management System -->
+                <div
+                  class="flex flex-col gap-3 rounded-lg bg-[#0c123a] p-4 project-item"
+                >
+                  <a href="https://github.com/AlfonsoDelaLuna/Guidance_System"
+                    ><div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md guidance-background"
+                    ></div
+                  ></a>
+                  <div>
+                    <p
+                      class="text-[#FFA500] text-lg font-medium"
+                      style="font-weight: bold"
+                    >
+                      Guidance Management System
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-3">
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >HTML</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >CSS</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full"
+                        >PHP</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full"
+                        >MySQL</span
+                      >
+                    </div>
+                    <p
+                      class="text-[#a9a9d8] text-sm font-normal pt-1 text-justify"
+                    >
+                      A web-based inventory management system that tracks the
+                      use of consultation forms during the academic year, adds
+                      students, and maintains student information.
+                    </p>
+                  </div>
+                </div>
+                <!-- Drugstore Management System -->
+                <div
+                  class="flex flex-col gap-3 rounded-lg bg-[#0c123a] p-4 project-item"
+                >
+                  <a
+                    href="https://github.com/AlfonsoDelaLuna/Drugstore_Inventory"
+                    ><div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md drugstore-background"
+                    ></div
+                  ></a>
+                  <div>
+                    <p
+                      class="text-[#FFA500] text-lg font-medium"
+                      style="font-weight: bold"
+                    >
+                      Drugstore Management System
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-3">
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >HTML</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >CSS</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full"
+                        >PHP</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full"
+                        >MySQL</span
+                      >
+                    </div>
+                    <p
+                      class="text-[#a9a9d8] text-sm font-normal pt-1 text-justify"
+                    >
+                      A web-based inventory management system that streamlines
+                      the process of entering medications from paper to digital
+                      formats. The administrator can download and print data
+                      from it, and it assists the nurse in recording the
+                      medications that are available and their expiration dates.
+                    </p>
+                  </div>
+                </div>
+                <!-- Transaction Management System -->
+                <div
+                  class="flex flex-col gap-3 rounded-lg bg-[#0c123a] p-4 project-item"
+                >
+                  <a
+                    href="https://github.com/AlfonsoDelaLuna/Transaction-System"
+                    ><div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md transaction-background"
+                    ></div
+                  ></a>
+                  <div>
+                    <p
+                      class="text-[#FFA500] text-lg font-medium"
+                      style="font-weight: bold"
+                    >
+                      Transaction Management System
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-3">
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >HTML</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >CSS</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#1572B6] px-2.5 py-1 rounded-full"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full"
+                        >PHP</span
+                      >
+                      <span
+                        class="text-xs text-white bg-[#4479A1] px-2.5 py-1 rounded-full"
+                        >MySQL</span
+                      >
+                    </div>
+                    <p
+                      class="text-[#a9a9d8] text-sm font-normal pt-1 text-justify"
+                    >
+                      This web-based system assists employees in taking orders
+                      from clients and administrators in monitoring daily,
+                      monthly, and annual revenue as well as the most lucrative
+                      product.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- 3. EXPERIENCE SECTION -->
+            <section id="experience">
+              <h2 class="text-2xl font-bold text-center text-[#FFA500]">
+                Experience
+              </h2>
+              <div class="flex flex-col gap-8 pt-8">
+                <!-- Experience Item 1 -->
+                <div class="flex flex-col sm:flex-row gap-6">
+                  <img
+                    src="images/STI_Logo.png"
+                    alt="Company Logo"
+                    class="w-16 h-16 rounded-lg object-cover flex-shrink-0"
+                  />
+                  <div class="flex flex-col">
+                    <p class="text-[#FFA500] font-bold text-lg">
+                      MIS/IT Department - Internship
+                    </p>
+                    <p class="text-[#a9a9d8] text-base">
+                      STI College Caloocan | February 2025 - April 2025
+                    </p>
+                    <ul
+                      class="list-disc list-inside text-[#a9a9d8] text-sm space-y-1 pt-2"
+                    >
+                      <li>
+                        Built and deployed record systems for the clinic,
+                        library, and guidance office using PHP/MySQL, improving
+                        efficiency by 83% and cutting manual tracking errors.
+                      </li>
+                      <li>
+                        Ran a cybersecurity orientation for over 30 senior high
+                        school interns, helping them understand common digital
+                        threats and how to avoid them.
+                      </li>
+                      <li>
+                        Fixed network and hardware issues, resolving 73% of
+                        cases and reducing system downtime for students and
+                        staff.
+                      </li>
+                      <li>
+                        Worked with teams on full-stack projects and IT support,
+                        improving technical knowledge, communication, and
+                        ability to solve real-world problems.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- 4. EDUCATION SECTION -->
+            <section id="education">
+              <h2 class="text-2xl font-bold text-center text-[#FFA500]">
+                Education
+              </h2>
+              <div class="flex flex-col gap-8 pt-8">
+                <!-- Education Item 1 -->
+                <div
+                  class="flex flex-col sm:flex-row items-start sm:items-center gap-6"
+                >
+                  <img
+                    src="images/STI_Logo.png"
+                    alt="School Logo"
+                    class="w-16 h-16 rounded-lg object-cover flex-shrink-0"
+                  />
+                  <div class="flex flex-col">
+                    <p class="text-[#FFA500] font-bold text-lg">
+                      STI College Caloocan
+                    </p>
+                    <p class="text-[#a9a9d8] text-base">
+                      Bachelor of Science in Information Technology
+                    </p>
+                    <p class="text-[#a9a9d8] text-sm">2021 - 2025</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
