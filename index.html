@@ -18,123 +18,129 @@
       class="relative flex size-full min-h-screen flex-col group/design-root font-space-grotesk"
     >
       <div class="layout-container flex h-full grow flex-col">
-        <!-- Header -->
-        <header
-          class="sticky top-0 z-10 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#1e293b] px-10 py-3 bg-[#050A30]/80 backdrop-blur-sm"
-        >
-          <div class="flex flex-1 justify-center gap-8">
-            <div class="flex items-center gap-9">
-              <a
-                class="text-[#FFA500] text-sm font-medium leading-normal hover:text-white transition-colors"
-                href="#about"
-                >About</a
-              >
-              <a
-                class="text-[#FFA500] text-sm font-medium leading-normal hover:text-white transition-colors"
-                href="#projects"
-                >Projects</a
-              >
-              <a
-                class="text-[#FFA500] text-sm font-medium leading-normal hover:text-white transition-colors"
-                href="#experience"
-                >Experience</a
-              >
-              <a
-                class="text-[#FFA500] text-sm font-medium leading-normal hover:text-white transition-colors"
-                href="#education"
-                >Education</a
-              >
-            </div>
-          </div>
-        </header>
-
         <!-- Main Content Area -->
         <main class="flex justify-center px-4 sm:px-10 md:px-20 py-16">
           <div class="flex w-full max-w-[1152px] flex-col gap-16">
             <!-- 1. INFORMATION & SKILLS SECTION -->
-            <section id="about" class="flex flex-col items-center text-center">
+            <section
+              id="about"
+              class="min-h-[calc(100vh-8rem)] w-full flex flex-col items-center justify-center text-center"
+            >
               <!-- Profile Info -->
-              <div class="flex flex-col md:flex-row gap-8 items-center">
+              <div
+                class="flex flex-col md:flex-row items-center gap-8 md:gap-12"
+              >
                 <div
-                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-40 h-40 flex-shrink-0 profile-image"
-                ></div>
+                  class="relative w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 flex-shrink-0 group"
+                >
+                  <div
+                    class="absolute inset-0 bg-center bg-no-repeat aspect-square bg-cover rounded-full w-full h-full profile-image-primary ring-4 ring-yellow-500 shadow-xl"
+                  ></div>
+                  <div
+                    class="absolute inset-0 bg-center bg-no-repeat aspect-square bg-cover rounded-full w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-00 profile-image-secondary ring-4 ring-yellow-500 shadow-xl"
+                  ></div>
+                </div>
                 <div
                   class="flex flex-col items-center md:items-start justify-center text-center md:text-left"
                 >
-                  <p
-                    class="text-[#FFA500] text-3xl font-bold leading-tight tracking-[-0.015em]"
+                  <h1
+                    class="text-[#FFA500] text-4xl sm:text-5xl md:text-6xl font-extrabold leading-[1.1] tracking-tight"
                   >
-                    Alfonso Martin I. Dela Luna
-                  </p>
-                  <p class="text-[#a9a9d8] text-lg font-normal leading-normal">
+                    <span
+                      class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:h-3 sm:before:h-4 md:before:h-6 before:w-[110%] before:rounded-md before:-z-10"
+                    >
+                      Alfonso Martin I. Dela Luna
+                    </span>
+                  </h1>
+                  <p
+                    class="text-gray-400 text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug"
+                  >
                     Web/Software Developer
                   </p>
                   <p
-                    class="text-[#a9a9d8] text-base font-normal leading-normal"
+                    class="text-gray-400 text-lg md:text-xl font-normal leading-snug"
                   >
                     Bagong Pag-asa Quezon City, Philippines
                   </p>
-                  <div class="flex items-center gap-3 pt-3">
+                  <div class="pt-4">
+                    <!-- Reference Layout -->
+                    <div
+                      class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2"
+                    >
+                      <a
+                        href="#projects"
+                        class="inline-flex h-12 px-6 items-center justify-center rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold shadow hover:opacity-60 transition"
+                      >
+                        View My Work <span class="ml-2">→</span>
+                      </a>
+                      <a
+                        href="public/Dela_Luna,_Alfonso_Martin_I.pdf"
+                        download="DelaLuna_Resume.pdf"
+                        class="inline-flex h-12 px-6 items-center justify-center rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold hover:opacity-60 transition"
+                      >
+                        Download CV
+                      </a>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-4 pt-8">
                     <a
                       href="https://github.com/AlfonsoDelaLuna"
-                      class="hover:opacity-80 transition-opacity"
-                      ><img
+                      class="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition"
+                    >
+                      <img
                         src="images/Github.png"
                         alt="GitHub"
-                        width="36px"
-                        height="36px"
-                    /></a>
+                        class="h-6 w-6"
+                      />
+                    </a>
                     <a
                       href="https://www.linkedin.com/notifications/?filter=all"
-                      class="hover:opacity-80 transition-opacity"
-                      ><img
+                      class="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition"
+                    >
+                      <img
                         src="images/LinkedIn.png"
                         alt="LinkedIn"
-                        width="30px"
-                        height="30px"
-                    /></a>
+                        class="h-6 w-6"
+                      />
+                    </a>
                     <a
                       href="https://jobseeker.kalibrr.com/candidate/profile"
-                      class="hover:opacity-80 transition-opacity"
-                      ><img
+                      class="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition"
+                    >
+                      <img
                         src="images/kalibrr.png"
                         alt="Kalibrr"
-                        width="24px"
-                        height="24px"
-                    /></a>
+                        class="h-6 w-6"
+                      />
+                    </a>
                     <a
                       href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage"
-                      class="hover:opacity-80 transition-opacity"
-                      ><img
+                      class="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition"
+                    >
+                      <img
                         src="images/indeed.png"
                         alt="Indeed"
-                        width="34px"
-                        height="34px"
-                    /></a>
-                  </div>
-                  <div class="pt-4">
-                    <a
-                      href="public/Dela_Luna,_Alfonso_Martin_I.pdf"
-                      download="DelaLuna_Resume.pdf"
-                      class="inline-block bg-[#FFA500] text-white font-bold py-2 px-4 rounded-md hover:bg-orange-600 transition-colors"
-                      >Download Resume</a
-                    >
+                        class="h-6 w-6"
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
               <!-- Skills -->
-              <div class="w-full pt-16">
-                <h2 class="text-2xl font-bold text-[#FFA500]">Skills</h2>
-                <div class="flex flex-wrap justify-center gap-x-6 gap-y-4 pt-6">
+              <div class="w-full pt-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#FFA500]">
+                  Skills
+                </h2>
+                <div class="flex flex-wrap justify-center gap-x-8 gap-y-6 pt-8">
                   <div
                     class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 project-item"
                   >
                     <img
                       src="images/HTML.png"
                       alt="HTML5"
-                      class="w-12 h-12 rounded-lg"
+                      class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
                     />
-                    <p class="text-[#a9a9d8] text-sm">HTML5</p>
+                    <p class="text-[#a9a9d8] text-base md:text-lg">HTML5</p>
                   </div>
                   <div
                     class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 project-item"
@@ -142,9 +148,9 @@
                     <img
                       src="images/CSS.png"
                       alt="CSS3"
-                      class="w-12 h-12 rounded-lg"
+                      class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
                     />
-                    <p class="text-[#a9a9d8] text-sm">CSS3</p>
+                    <p class="text-[#a9a9d8] text-base md:text-lg">CSS3</p>
                   </div>
                   <div
                     class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 project-item"
@@ -152,9 +158,11 @@
                     <img
                       src="images/JS.png"
                       alt="JavaScript"
-                      class="w-12 h-12 rounded-lg"
+                      class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
                     />
-                    <p class="text-[#a9a9d8] text-sm">JavaScript</p>
+                    <p class="text-[#a9a9d8] text-base md:text-lg">
+                      JavaScript
+                    </p>
                   </div>
                   <div
                     class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 project-item"
@@ -162,9 +170,9 @@
                     <img
                       src="images/PHP.png"
                       alt="PHP"
-                      class="w-16 h-12 rounded-lg"
+                      class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
                     />
-                    <p class="text-[#a9a9d8] text-sm">PHP</p>
+                    <p class="text-[#a9a9d8] text-base md:text-lg">PHP</p>
                   </div>
                   <div
                     class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 project-item"
@@ -172,9 +180,9 @@
                     <img
                       src="images/MYSQL.png"
                       alt="MySQL"
-                      class="w-12 h-12 rounded-lg"
+                      class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
                     />
-                    <p class="text-[#a9a9d8] text-sm">MySQL</p>
+                    <p class="text-[#a9a9d8] text-base md:text-lg">MySQL</p>
                   </div>
                   <div
                     class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 project-item"
@@ -182,9 +190,9 @@
                     <img
                       src="images/Java.png"
                       alt="Java"
-                      class="w-12 h-12 rounded-lg"
+                      class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
                     />
-                    <p class="text-[#a9a9d8] text-sm">Java</p>
+                    <p class="text-[#a9a9d8] text-base md:text-lg">Java</p>
                   </div>
                   <div
                     class="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 project-item"
@@ -192,9 +200,9 @@
                     <img
                       src="images/Python.png"
                       alt="Python"
-                      class="w-12 h-12 rounded-lg"
+                      class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
                     />
-                    <p class="text-[#a9a9d8] text-sm">Python</p>
+                    <p class="text-[#a9a9d8] text-base md:text-lg">Python</p>
                   </div>
                 </div>
               </div>

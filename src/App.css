@@ -1,6 +1,6 @@
 /* Font */
 .font-space-grotesk {
-  font-family: "Arial", sans-serif;
+  font-family: "Space Grotesk", "Noto Sans", Arial, sans-serif;
 }
 
 /* Design under Project Section  */
@@ -16,8 +16,12 @@
 }
 
 /* Images used in Project Section */
-.profile-image {
+.profile-image-primary {
   background-image: url("../images/Profile2Formal_1x1.png");
+}
+
+.profile-image-secondary {
+  background-image: url("../images/STI_Logo.png");
 }
 
 .coplan-background {
@@ -29,8 +33,22 @@
 }
 
 .library-background {
-  background-image: url("../images/Library_bg.png");
+  background-image: url("../images/library_bg.png");
 }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.group:hover .loading-border {
+  opacity: 1;
+}
+
 .drugstore-background {
   background-image: url("../images/Drugstore_bg.png");
 }
